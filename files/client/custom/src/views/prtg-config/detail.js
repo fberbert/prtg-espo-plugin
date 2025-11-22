@@ -40,9 +40,7 @@ define('custom:views/prtg-config/detail', ['views/record/detail'], function (Dep
                         Espo.Ui.success(this.translate('testSuccess', 'messages', 'PrtgConfig'));
                     } else {
                         const message = data && data.message ? data.message : 'Sem detalhes';
-                        Espo.Ui.error(
-                            this.translate('testFailed', 'messages', 'PrtgConfig', { message })
-                        );
+                        Espo.Ui.error(this.formatTestFailed(message));
                     }
 
                     this.model.fetch().then(() => this.render());
@@ -54,11 +52,18 @@ define('custom:views/prtg-config/detail', ['views/record/detail'], function (Dep
                         (xhr && xhr.responseText) ||
                         (xhr && xhr.status ? `HTTP ${xhr.status}` : '') ||
                         'Sem detalhes';
-                    Espo.Ui.error(
-                        this.translate('testFailed', 'messages', 'PrtgConfig', { message: reason }),
-                        true
-                    );
+                    Espo.Ui.error(this.formatTestFailed(reason), true);
                 });
+        },
+
+        formatTestFailed(message) {
+            const template = this.translate('testFailed', 'messages', 'PrtgConfig');
+
+            if (template && template.includes('{message}')) {
+                return template.replace('{message}', message);
+            }
+
+            return `${template} ${message}`;
         }
     });
 });
