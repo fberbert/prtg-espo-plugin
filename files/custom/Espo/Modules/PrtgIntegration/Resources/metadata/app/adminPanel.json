@@ -1,0 +1,15 @@
+{
+    "prtg": {
+        "label": "PRTG",
+        "order": 200,
+        "itemList": [
+            {
+                "url": "#PrtgConfig",
+                "label": "Configurações do PRTG",
+                "iconClass": "fas fa-network-wired",
+                "description": "Defina endpoint, credenciais e mapeamento do sensor.",
+                "tabQuickSearch": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,7 @@
+[
+    { "name": "name", "link": true },
+    { "name": "sensorId" },
+    { "name": "status" },
+    { "name": "lastCheck" },
+    { "name": "lastValue" }
+]

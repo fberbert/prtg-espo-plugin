@@ -1,0 +1,8 @@
+{
+    "controller": "controllers/record",
+    "record": "views/record/record",
+    "recordViews": {
+        "detail": "custom:views/prtg/detail"
+    },
+    "iconClass": "fas fa-satellite-dish"
+}

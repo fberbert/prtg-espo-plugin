@@ -1,0 +1,82 @@
+[
+    {
+        "rows": [
+            [
+                { "name": "name" },
+                { "name": "sensorId" }
+            ],
+            [
+                { "name": "status" },
+                { "name": "lastCheck" }
+            ]
+        ],
+        "style": "info",
+        "customLabel": "Identificação"
+    },
+    {
+        "rows": [
+            [
+                { "name": "device" },
+                { "name": "group" }
+            ],
+            [
+                { "name": "probe" },
+                { "name": "intervalSec" }
+            ]
+        ],
+        "style": "default",
+        "customLabel": "Origem"
+    },
+    {
+        "rows": [
+            [
+                { "name": "uptime" },
+                { "name": "downtime" }
+            ],
+            [
+                { "name": "coverage" },
+                { "name": "lastValue" }
+            ],
+            [
+                { "name": "lastUp" },
+                { "name": "lastDown" }
+            ],
+            [
+                { "name": "message" },
+                { "name": "priority" }
+            ]
+        ],
+        "style": "success",
+        "customLabel": "Saúde"
+    },
+    {
+        "rows": [
+            [
+                { "name": "chart2h" }
+            ],
+            [
+                { "name": "chart2d" }
+            ],
+            [
+                { "name": "chart30d" }
+            ],
+            [
+                { "name": "chart365d" }
+            ]
+        ],
+        "style": "default",
+        "customLabel": "Gráficos (PRTG)"
+    },
+    {
+        "rows": [
+            [
+                { "name": "rawDetails" }
+            ],
+            [
+                { "name": "notes" }
+            ]
+        ],
+        "style": "warning",
+        "customLabel": "Detalhes"
+    }
+]

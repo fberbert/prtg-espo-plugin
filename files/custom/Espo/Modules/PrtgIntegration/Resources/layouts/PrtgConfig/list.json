@@ -1,0 +1,7 @@
+[
+    { "name": "name", "link": true },
+    { "name": "endpoint" },
+    { "name": "username" },
+    { "name": "lastTestStatus" },
+    { "name": "lastTestedAt" }
+]

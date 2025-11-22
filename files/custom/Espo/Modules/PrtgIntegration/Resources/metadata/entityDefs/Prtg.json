@@ -1,0 +1,125 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "required": true,
+            "isCustom": true
+        },
+        "sensorId": {
+            "type": "varchar",
+            "maxLength": 80,
+            "copyToClipboard": true,
+            "isCustom": true
+        },
+        "device": {
+            "type": "varchar",
+            "maxLength": 180,
+            "isCustom": true
+        },
+        "probe": {
+            "type": "varchar",
+            "maxLength": 180,
+            "isCustom": true
+        },
+        "group": {
+            "type": "varchar",
+            "maxLength": 180,
+            "isCustom": true
+        },
+        "status": {
+            "type": "enum",
+            "options": [
+                "up",
+                "warning",
+                "down",
+                "paused",
+                "unknown"
+            ],
+            "maxLength": 32,
+            "style": {
+                "up": "success",
+                "warning": "warning",
+                "down": "danger",
+                "paused": "info",
+                "unknown": "default"
+            },
+            "isCustom": true,
+            "displayAsLabel": true
+        },
+        "uptime": {
+            "type": "float",
+            "decimalPlaces": 4,
+            "isCustom": true
+        },
+        "downtime": {
+            "type": "float",
+            "decimalPlaces": 4,
+            "isCustom": true
+        },
+        "coverage": {
+            "type": "float",
+            "decimalPlaces": 2,
+            "isCustom": true
+        },
+        "message": {
+            "type": "text",
+            "rowsMin": 2,
+            "isCustom": true
+        },
+        "priority": {
+            "type": "int",
+            "isCustom": true
+        },
+        "intervalSec": {
+            "type": "int",
+            "isCustom": true
+        },
+        "lastUp": {
+            "type": "datetime",
+            "isCustom": true
+        },
+        "lastDown": {
+            "type": "datetime",
+            "isCustom": true
+        },
+        "lastCheck": {
+            "type": "datetime",
+            "isCustom": true
+        },
+        "lastValue": {
+            "type": "varchar",
+            "maxLength": 255,
+            "isCustom": true
+        },
+        "rawDetails": {
+            "type": "wysiwyg",
+            "isCustom": true,
+            "rowsMin": 6
+        },
+        "chart2h": {
+            "type": "wysiwyg",
+            "isCustom": true,
+            "rowsMin": 4
+        },
+        "chart2d": {
+            "type": "wysiwyg",
+            "isCustom": true,
+            "rowsMin": 4
+        },
+        "chart30d": {
+            "type": "wysiwyg",
+            "isCustom": true,
+            "rowsMin": 4
+        },
+        "chart365d": {
+            "type": "wysiwyg",
+            "isCustom": true,
+            "rowsMin": 4
+        },
+        "notes": {
+            "type": "text",
+            "rowsMin": 2,
+            "isCustom": true
+        }
+    }
+}

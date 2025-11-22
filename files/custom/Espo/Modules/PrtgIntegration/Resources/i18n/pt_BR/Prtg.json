@@ -1,0 +1,39 @@
+{
+    "fields": {
+        "name": "Nome",
+        "sensorId": "ID do Sensor",
+        "device": "Dispositivo",
+        "probe": "Probe",
+        "group": "Grupo",
+        "status": "Status",
+        "uptime": "Disponibilidade (%)",
+        "downtime": "Indisponibilidade (%)",
+        "coverage": "Cobertura (%)",
+        "intervalSec": "Intervalo (s)",
+        "lastUp": "Último OK",
+        "lastDown": "Última queda",
+        "lastCheck": "Última verificação",
+        "lastValue": "Último valor",
+        "rawDetails": "Detalhes (raw)",
+        "notes": "Observações"
+    },
+    "labels": {
+        "Create Prtg": "Novo Sensor PRTG",
+        "Prtg": "PRTG",
+        "syncFromPrtg": "Sincronizar do PRTG",
+        "PRTG": "PRTG"
+    },
+    "options": {
+        "status": {
+            "up": "Up",
+            "warning": "Alerta",
+            "down": "Down",
+            "paused": "Pausado",
+            "unknown": "Desconhecido"
+        }
+    },
+    "messages": {
+        "synced": "Sincronizado do PRTG.",
+        "syncFailed": "Falha ao sincronizar: {message}"
+    }
+}

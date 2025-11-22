@@ -1,0 +1,39 @@
+{
+    "fields": {
+        "name": "Name",
+        "sensorId": "Sensor ID",
+        "device": "Device",
+        "probe": "Probe",
+        "group": "Group",
+        "status": "Status",
+        "uptime": "Uptime (%)",
+        "downtime": "Downtime (%)",
+        "coverage": "Coverage (%)",
+        "intervalSec": "Interval (s)",
+        "lastUp": "Last Up",
+        "lastDown": "Last Down",
+        "lastCheck": "Last Check",
+        "lastValue": "Last Value",
+        "rawDetails": "Raw Details",
+        "notes": "Notes"
+    },
+    "labels": {
+        "Create Prtg": "New PRTG Sensor",
+        "Prtg": "PRTG",
+        "syncFromPrtg": "Sync from PRTG",
+        "PRTG": "PRTG"
+    },
+    "options": {
+        "status": {
+            "up": "Up",
+            "warning": "Warning",
+            "down": "Down",
+            "paused": "Paused",
+            "unknown": "Unknown"
+        }
+    },
+    "messages": {
+        "synced": "Synced from PRTG.",
+        "syncFailed": "Sync failed: {message}"
+    }
+}

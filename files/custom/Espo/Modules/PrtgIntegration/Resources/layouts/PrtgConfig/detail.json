@@ -1,0 +1,54 @@
+[
+    {
+        "rows": [
+            [
+                { "name": "name", "readOnly": true }
+            ],
+            [
+                { "name": "endpoint" },
+                { "name": "verifyTls" }
+            ],
+            [
+                { "name": "username" },
+                { "name": "passhash" }
+            ],
+            [
+                { "name": "timeout" }
+            ]
+        ],
+        "style": "info",
+        "customLabel": "Conexão PRTG"
+    },
+    {
+        "rows": [
+            [
+                { "name": "sensorEntity" },
+                { "name": "sensorField" }
+            ]
+        ],
+        "style": "warning",
+        "customLabel": "Mapeamento de Sensor"
+    },
+    {
+        "rows": [
+            [
+                { "name": "lastTestStatus" },
+                { "name": "lastTestedAt" }
+            ],
+            [
+                { "name": "lastTestMessage" }
+            ]
+        ],
+        "style": "success",
+        "customLabel": "Último teste"
+    },
+    {
+        "rows": [
+            [
+                { "name": "notes" }
+            ]
+        ],
+        "style": "default",
+        "customLabel": "Observações"
+    }
+]

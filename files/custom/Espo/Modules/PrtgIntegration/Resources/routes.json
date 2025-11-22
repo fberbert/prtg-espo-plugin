@@ -1,0 +1,24 @@
+[
+    {
+        "route": "/PrtgIntegration/TestConnection",
+        "method": "post",
+        "actionClassName": "Espo\\Modules\\PrtgIntegration\\Api\\TestConnection"
+    },
+    {
+        "route": "/PrtgIntegration/Sync/:id",
+        "method": "get",
+        "actionClassName": "Espo\\Modules\\PrtgIntegration\\Api\\Sync",
+        "params": {
+            "id": ":id"
+        }
+    },
+    {
+        "route": "/PrtgIntegration/Charts/:scope/:id",
+        "method": "get",
+        "actionClassName": "Espo\\Modules\\PrtgIntegration\\Api\\Charts",
+        "params": {
+            "scope": ":scope",
+            "id": ":id"
+        }
+    }
+]

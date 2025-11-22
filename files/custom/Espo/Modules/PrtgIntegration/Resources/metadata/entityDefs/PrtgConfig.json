@@ -1,0 +1,80 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "readOnly": true,
+            "default": "Configuração PRTG",
+            "isCustom": true
+        },
+        "endpoint": {
+            "type": "url",
+            "required": true,
+            "isCustom": true
+        },
+        "username": {
+            "type": "varchar",
+            "maxLength": 120,
+            "isCustom": true
+        },
+        "passhash": {
+            "type": "varchar",
+            "maxLength": 255,
+            "isCustom": true,
+            "view": "views/fields/password"
+        },
+        "verifyTls": {
+            "type": "bool",
+            "default": true,
+            "isCustom": true
+        },
+        "timeout": {
+            "type": "int",
+            "default": 15,
+            "isCustom": true
+        },
+        "sensorEntity": {
+            "type": "varchar",
+            "maxLength": 80,
+            "default": "CCircuitoDesiginao",
+            "isCustom": true
+        },
+        "sensorField": {
+            "type": "varchar",
+            "maxLength": 80,
+            "default": "idSensor",
+            "isCustom": true
+        },
+        "notes": {
+            "type": "text",
+            "rowsMin": 2,
+            "isCustom": true
+        },
+        "lastTestStatus": {
+            "type": "enum",
+            "options": [
+                "success",
+                "failed",
+                "untested"
+            ],
+            "default": "untested",
+            "style": {
+                "success": "success",
+                "failed": "danger",
+                "untested": "default"
+            },
+            "isCustom": true,
+            "readOnly": true
+        },
+        "lastTestMessage": {
+            "type": "varchar",
+            "maxLength": 255,
+            "isCustom": true,
+            "readOnly": true
+        },
+        "lastTestedAt": {
+            "type": "datetime",
+            "readOnly": true,
+            "isCustom": true
+        }
+    }
+}

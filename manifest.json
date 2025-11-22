@@ -1,0 +1,19 @@
+{
+  "name": "Integração PRTG",
+  "type": "extension",
+  "version": "1.0.0",
+  "author": "Alta Rede",
+  "description": "Entidade PRTG, painel de configuração e teste de conexão.",
+  "releaseDate": "2025-11-21",
+  "acceptableVersions": [
+    ">=9.0.0"
+  ],
+  "isLoadable": true,
+  "skipBackup": false,
+  "installScripts": [
+    "scripts/install.php"
+  ],
+  "uninstallScripts": [
+    "scripts/uninstall.php"
+  ]
+}

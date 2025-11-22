@@ -1,0 +1,34 @@
+{
+    "fields": {
+        "name": "Nome",
+        "endpoint": "Endpoint do PRTG",
+        "username": "Usuário",
+        "passhash": "Passhash / Senha",
+        "verifyTls": "Validar TLS",
+        "timeout": "Timeout (s)",
+        "sensorEntity": "Entidade do Sensor",
+        "sensorField": "Campo do ID do Sensor",
+        "notes": "Observações",
+        "lastTestStatus": "Status do Último Teste",
+        "lastTestMessage": "Mensagem do Último Teste",
+        "lastTestedAt": "Último Teste em"
+    },
+    "labels": {
+        "Create PrtgConfig": "Configuração PRTG",
+        "PrtgConfig": "Configuração PRTG",
+        "testConnection": "Testar conexão"
+    },
+    "messages": {
+        "testSuccess": "Conexão validada com sucesso.",
+        "testFailed": "Falha na conexão: {message}",
+        "missingCredentials": "Endpoint, usuário e passhash são obrigatórios para testar.",
+        "saveRecordFirst": "Salve o registro antes de testar a conexão."
+    },
+    "options": {
+        "lastTestStatus": {
+            "success": "Sucesso",
+            "failed": "Falhou",
+            "untested": "Não testado"
+        }
+    }
+}
